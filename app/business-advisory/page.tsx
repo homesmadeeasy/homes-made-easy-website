@@ -333,6 +333,21 @@ export default function BusinessAdvisoryPage() {
           </div>
         </div>
       </section>
+<footer className="border-t border-stone-200 bg-white">
+  <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-10 text-sm text-slate-600 md:flex-row">
+    <p>© Holiday Homes Made Easy</p>
+
+    <div className="flex gap-6">
+      <a href="/">Home</a>
+      <a href="/short-stay-management">Short Stays</a>
+      <a href="/accounting-bookkeeping">Accounting</a>
+      <a href="/business-advisory">Advisory</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
     </main>
   );
 }
