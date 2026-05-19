@@ -33,12 +33,6 @@ const features = [
   "Profitability reviews and forward cash-flow planning",
 ];
 
-const stats = [
-  ["operations", "Guest-ready systems and owner support"],
-  ["Clear records", "Income, expenses and reporting organised"],
-  ["Advisory", "Cash-flow, pricing and growth decisions"],
-];
-
 export default function ShortStayFinanceWebsite() {
   return (
     <div className="min-h-screen bg-stone-50 text-slate-950">
@@ -270,18 +264,7 @@ export default function ShortStayFinanceWebsite() {
   </div>
 </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-16">
-          <div className="grid gap-5 md:grid-cols-3">
-            {stats.map(([number, label]) => (
-              <Card key={number} className="rounded-[2rem] border-0 bg-slate-950 text-white shadow-xl shadow-slate-200">
-                <CardContent className="p-8">
-                  <p className="text-5xl font-semibold tracking-tight">{number}</p>
-                  <p className="mt-3 text-slate-300">{label}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+       
 
         <section id="process" className="mx-auto max-w-7xl px-6 py-16">
           <div className="mb-10 max-w-2xl">
