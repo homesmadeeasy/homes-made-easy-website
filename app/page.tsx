@@ -32,32 +32,7 @@ const features = [
   "GST, BAS and expense organisation support",
   "Profitability reviews and forward cash-flow planning",
 ];
-<section className="mx-auto max-w-7xl px-6 py-16">
-  <div className="grid gap-6 md:grid-cols-3">
-    {[
-      {
-        title: "Local WA focus",
-        text: "Built around practical support for holiday home owners across Perth, WA and selected short-stay locations.",
-      },
-      {
-        title: "Real property experience",
-        text: "Our approach is based on real short-stay operations, guest expectations, cleaner coordination and owner communication.",
-      },
-      {
-        title: "Operations plus numbers",
-        text: "We connect property presentation, bookings, costs, records and planning so owners can make clearer decisions.",
-      },
-    ].map((item) => (
-      <div
-        key={item.title}
-        className="rounded-[2rem] border border-stone-200 bg-white p-7 shadow-sm"
-      >
-        <h3 className="text-2xl font-semibold tracking-tight">{item.title}</h3>
-        <p className="mt-4 leading-7 text-slate-600">{item.text}</p>
-      </div>
-    ))}
-  </div>
-</section>
+
 const stats = [
   ["operations", "Guest-ready systems and owner support"],
   ["Clear records", "Income, expenses and reporting organised"],
@@ -257,7 +232,43 @@ export default function ShortStayFinanceWebsite() {
     </div>
   </div>
 </section>
+<section className="bg-stone-100 py-16">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mb-10 max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.28em] text-stone-500">
+        Why trust us
+      </p>
+      <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+        Built on real property experience and clear business thinking.
+      </h2>
+    </div>
 
+    <div className="grid gap-6 md:grid-cols-3">
+      {[
+        {
+          title: "Local WA focus",
+          text: "Built around practical support for holiday home owners across Perth, WA and selected short-stay locations.",
+        },
+        {
+          title: "Real property experience",
+          text: "Our approach is based on real short-stay operations, guest expectations, cleaner coordination and owner communication.",
+        },
+        {
+          title: "Operations plus numbers",
+          text: "We connect property presentation, bookings, costs, records and planning so owners can make clearer decisions.",
+        },
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="rounded-[2rem] border border-stone-200 bg-white p-7 shadow-sm"
+        >
+          <h3 className="text-2xl font-semibold tracking-tight">{item.title}</h3>
+          <p className="mt-4 leading-7 text-slate-600">{item.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         <section className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid gap-5 md:grid-cols-3">
