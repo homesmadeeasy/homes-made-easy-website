@@ -254,19 +254,48 @@ export default function ShortStayFinanceWebsite() {
           </div>
           <div className="grid gap-5 md:grid-cols-4">
             {[
-              [CalendarCheck, "Review", "We look at the property, bookings, revenue sources, expenses and current systems."],
-              [FileText, "Organise", "We clean up categories, owner records, contractor costs and recurring obligations."],
-              [Calculator, "Report", "You get useful monthly summaries that show what is working and what is leaking money."],
-              [TrendingUp, "Plan", "We map next steps for pricing, cash flow, tax preparation and growth."],
-            ].map(([Icon, title, text]) => (
-              <Card key={title} className="rounded-[2rem] border-stone-200 bg-white">
-                <CardContent className="p-6">
-                  <Icon className="h-7 w-7" />
-                  <h3 className="mt-5 text-xl font-semibold">{title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">{text}</p>
-                </CardContent>
-              </Card>
-            ))}
+  {
+    icon: CalendarCheck,
+    title: "Review",
+    text: "We look at the property, bookings, revenue sources, expenses and current systems.",
+  },
+  {
+    icon: FileText,
+    title: "Organise",
+    text: "We clean up categories, owner records, contractor costs and recurring obligations.",
+  },
+  {
+    icon: Calculator,
+    title: "Report",
+    text: "You get useful monthly summaries that show what is working and what is leaking money.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Plan",
+    text: "We map next steps for pricing, cash flow, tax preparation and growth.",
+  },
+].map((item) => {
+  const Icon = item.icon;
+
+  return (
+    <Card
+      key={item.title}
+      className="rounded-[2rem] border-stone-200 bg-white"
+    >
+      <CardContent className="p-6">
+        <Icon className="h-7 w-7" />
+
+        <h3 className="mt-5 text-xl font-semibold">
+          {item.title}
+        </h3>
+
+        <p className="mt-3 text-sm leading-6 text-slate-600">
+          {item.text}
+        </p>
+      </CardContent>
+    </Card>
+  );
+})}
           </div>
         </section>
 
