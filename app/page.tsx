@@ -32,7 +32,32 @@ const features = [
   "GST, BAS and expense organisation support",
   "Profitability reviews and forward cash-flow planning",
 ];
-
+<section className="mx-auto max-w-7xl px-6 py-16">
+  <div className="grid gap-6 md:grid-cols-3">
+    {[
+      {
+        title: "Local WA focus",
+        text: "Built around practical support for holiday home owners across Perth, WA and selected short-stay locations.",
+      },
+      {
+        title: "Real property experience",
+        text: "Our approach is based on real short-stay operations, guest expectations, cleaner coordination and owner communication.",
+      },
+      {
+        title: "Operations plus numbers",
+        text: "We connect property presentation, bookings, costs, records and planning so owners can make clearer decisions.",
+      },
+    ].map((item) => (
+      <div
+        key={item.title}
+        className="rounded-[2rem] border border-stone-200 bg-white p-7 shadow-sm"
+      >
+        <h3 className="text-2xl font-semibold tracking-tight">{item.title}</h3>
+        <p className="mt-4 leading-7 text-slate-600">{item.text}</p>
+      </div>
+    ))}
+  </div>
+</section>
 const stats = [
   ["operations", "Guest-ready systems and owner support"],
   ["Clear records", "Income, expenses and reporting organised"],
@@ -308,7 +333,53 @@ export default function ShortStayFinanceWebsite() {
             </p>
           </div>
         </section>
+<section className="mx-auto max-w-7xl px-6 py-20">
+  <div className="mb-10 max-w-3xl">
+    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-stone-500">
+      FAQs
+    </p>
+    <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+      Common questions from owners and business operators.
+    </h2>
+  </div>
 
+  <div className="grid gap-4 md:grid-cols-2">
+    {[
+      {
+        q: "What areas do you service?",
+        a: "We are focused on Perth, Western Australia and selected short-stay locations.",
+      },
+      {
+        q: "Do you help with Airbnb and short-stay properties?",
+        a: "Yes. We support short-stay owners with property presentation, operations, cleaner coordination, reporting and owner communication.",
+      },
+      {
+        q: "Can you help with bookkeeping and records?",
+        a: "Yes. We help organise income, expenses, booking revenue, supplier costs and reporting so the numbers are easier to understand.",
+      },
+      {
+        q: "Do you offer business advisory support?",
+        a: "Yes. We provide practical support around cash flow, pricing, cost control, planning and business organisation.",
+      },
+      {
+        q: "Do I need to be ready to start immediately?",
+        a: "No. You can send an enquiry first and we can help you understand the best next step.",
+      },
+      {
+        q: "How do I get started?",
+        a: "Send an enquiry through the contact page with a few details about your property or business.",
+      },
+    ].map((item) => (
+      <div
+        key={item.q}
+        className="rounded-[2rem] border border-stone-200 bg-white p-7 shadow-sm"
+      >
+        <h3 className="text-xl font-semibold">{item.q}</h3>
+        <p className="mt-3 leading-7 text-slate-600">{item.a}</p>
+      </div>
+    ))}
+  </div>
+</section>
         <section id="contact" className="mx-auto max-w-7xl px-6 py-20">
           <Card className="overflow-hidden rounded-[2rem] border-0 bg-slate-950 text-white shadow-2xl shadow-slate-200">
             <CardContent className="grid gap-8 p-8 md:grid-cols-[1fr_0.75fr] md:p-12">
